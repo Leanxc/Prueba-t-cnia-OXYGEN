@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Conversor</title>
+</head>
+
+<body>
+    <!-- Contenedor principal de la aplicación -->
+    <div class="conversor-unidad">
+        <!-- Contenedor principal interno -->
+        <div class="contenedor">
+            <!-- Encabezado con el título -->
+            <div class="superposicion">
+                <div class="envoltura-texto">unit converter</div>
+                <img class="interfaz-solida" src="img/exchange.png" alt="exchange" />
+            </div>
+
+            <!-- Sección principal de conversión -->
+            <div class="superposicion-grupo">
+                <div class="grupo">
+                    <div class="superposicion-2">
+                        <!-- Fondo -->
+                        <div class="rectangulo"></div>
+                        <div class="envoltura-texto-2">convert</div>
+
+                        <!-- Resultado y entrada de usuario -->
+                        <div class="grupo-2">
+                            <div class="envoltura-texto-3">
+                                <!-- Resultado de la conversión -->
+                                <div class="envoltura-resultado">
+                                    <span id="resultValue"></span>
+                                </div>
+                            </div>
+                            <div class="envoltura-texto-4">
+                            </div>
+                        </div>
+
+                        <!-- Entrada de usuario -->
+                        <div class="grupo-3">
+                            <img class="linea" src="img/line-2.png" alt="linea-2" />
+                            <div class="envoltura-texto-5"></div>
+                            <div class="envoltura-texto-6">
+                                <!-- Entrada numérica para el valor -->
+                                <input type="number" class="inputValue" id="inputValue" placeholder="value" />
+                            </div>
+                        </div>
+
+                        <!-- Selección de tipo de conversión -->
+                        <div class="grupo-4">
+                            <div class="superposicion-grupo-2">
+                                <div class="superposicion-grupo-2">
+                                    <!-- Línea y flecha hacia abajo -->
+                                    <img class="imagen" src="img/line-1.png" alt="linea-1" />
+                                    <img class="interfaz-solida-2" src="img/caret-down.png" alt="caret-down" />
+                                </div>
+                                <!-- Etiqueta y lista desplegable para seleccionar tipo de conversión -->
+                                <div class="envoltura-texto-7">
+                                    <label for="conversionType"></label>
+                                    <select id="conversionType">
+                                        <option value="kmToMiles">km → miles</option>
+                                        <option value="milesToKm">miles → km</option>
+                                        <option value="feetToMeters">feet → m</option>
+                                        <option value="metersToFeet">m → feet</option>
+                                        <option value="cmToInches">cm → in</option>
+                                        <option value="inchesToCm">in → cm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Imagen "exchange" (No funcional) -->
+                            <img class="interfaz-solida-3" src="img/image.png" alt="imagen" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Imagen de corazón al final de la sección de conversión (No funcional) -->
+                <img class="contorno-corazon" src="img/heart.png" alt="corazon" />
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+
+</html>
